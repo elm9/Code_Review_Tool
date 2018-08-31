@@ -1,0 +1,27 @@
+//COMMENTS need to be removed before this will work
+//
+//JSON file containing learning questions
+//
+{
+  "module": [
+  {
+    "API": [
+      {
+        "id": "1",
+        "question": "",
+        "answer": "",
+      },
+      {
+        "id": "2",
+        "question": "",
+        "answer": "",
+      },
+      {
+        "id": "3",
+        "question": "",
+        "answer": "",
+      }
+    ]
+  }
+]
+}
