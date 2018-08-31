@@ -3,6 +3,10 @@
 //Contributors: Nick, Emily, Emre, and Brandon
 //
 //Global Variables
+//empty array to generate flash cards?
+var cardsArr = [];
+var getQuestions = [];
+var getAnswers = [];
 
 //put empty arrays here to store JSON data
 //declare global vars needed
