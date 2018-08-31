@@ -14,16 +14,16 @@ var getAnswers = [];
 
 //Functions needed
 
-function start (){
+function startModule () {
   //initialize game on page-load and reset
+}
+
+function getJsonArray() { // change function title
+  //need a function for grabbing json data and putting into empty array?
 }
 
 function genCards () {
   //generate flash cards from array, use $.map method
-}
-
-function getJsonArray(){ // change function title
-  //need a function for grabbing json data and putting into empty array?
 }
 
 function showAnswer () {
