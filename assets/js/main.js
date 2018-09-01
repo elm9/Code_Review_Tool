@@ -52,6 +52,7 @@ $.getJSON("./assets/data/module-api.json", function(json) {
 
 
 //use this function to make next/previous question functionality?
+//TODO: change function name! to reflect what it actually does
 function getModule() {
   //use $.map instead of for loop ... will get there
   //how to use $.map to display first index, then add count oo
