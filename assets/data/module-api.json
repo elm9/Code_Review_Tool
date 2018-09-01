@@ -1,8 +1,7 @@
 
 {
-  "module": [
-  {
-    "API": [
+
+    "cards": [
       {
         "id": "1",
         "question": "What does JSON stand for?",
@@ -19,6 +18,4 @@
         "answer": "42"
       }
     ]
-  }
-]
 }
