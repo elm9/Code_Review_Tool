@@ -68,7 +68,7 @@ function getModule() {
 }
 //function to toggle between question/answer on click
 function cardToggle() {
-  //question div is shown
+  //question div is hidden bc right now placeholder start text is in html .answer div, on click goes  shows .question div first
 
   $('div.question').hide();
 
