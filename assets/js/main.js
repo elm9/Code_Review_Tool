@@ -2,11 +2,14 @@
 //
 //Contributors: Nick, Emily, Emre, and Brandon
 //
+//
+//import JSON file object! -google !
+//
 //Global Variables
 //empty array to generate flash cards?
 var cardsArr = [];
-var getQuestions = [];
-var getAnswers = [];
+var questionsArr = [];
+var answersArr = [];
 
 //put empty arrays here to store JSON data
 //declare global vars needed
@@ -15,11 +18,11 @@ var getAnswers = [];
 //Functions needed
 
 function startModule () {
-  //initialize game on page-load and reset
+  //initialize module on page-load and reset
 }
 
 function getJsonArray() { // change function title
-  //need a function for grabbing json data and putting into empty array?
+  //need a function for grabbing json data and putting into empty array? yes
 }
 
 function genCards () {

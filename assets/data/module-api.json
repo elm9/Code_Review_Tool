@@ -1,25 +1,22 @@
-//COMMENTS need to be removed before this will work
-//
-//JSON file containing learning questions
-//
+
 {
   "module": [
   {
     "API": [
       {
         "id": "1",
-        "question": "",
-        "answer": "",
+        "question": "What does JSON stand for?",
+        "answer": "JavaScript Object Notation"
       },
       {
         "id": "2",
-        "question": "",
-        "answer": "",
+        "question": "What is an API?",
+        "answer": "Application Programming Interface"
       },
       {
         "id": "3",
-        "question": "",
-        "answer": "",
+        "question": "Answer to the Ultimate Question of Life, the Universe, and Everything?",
+        "answer": "42"
       }
     ]
   }
