@@ -105,7 +105,8 @@ console.log("working");
 
 cardToggle();
 
-//doesnt do anything, make another for cardPrev, need to make html divs with id cardNext, and cardPrev
+// doesnt do anything yet, make another for cardPrev, need to make html divs with id cardNext, and cardPrev on each side of flash card output
+// use count++ on next to go through array like.. moduleJson[count].answer/question/etc
 $("#cardNext").on("click", "#flashCards", function() {
   //clear #flashcards container
 
