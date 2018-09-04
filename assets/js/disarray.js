@@ -124,10 +124,12 @@ cardToggle();
 
 
   $("#reviewContain").on("click", "#review, #understand", function (event) {
+
     event.stopPropagation();
     // console.log(moduleJson[count]);
     // console.log("json array length " + moduleJson.length);
-
+    $('div.answer').hide();
+    $('div.question').show();
     var id = $(this).attr('id');
     console.log("target id = " + id);
 
@@ -143,20 +145,30 @@ cardToggle();
        //takes current array index out of the main moduleJson array
       moduleJson.splice(count,1);
       console.log(moduleJson);
+
+      if (moduleJson.length == 0) {
+        $("#cardContain").html("Display categories here!");
+
+        alert("You've completed this category!");
+      }
     }
     // console.log(count);
     count++;
 
+
     if (moduleJson.length > count) {
+
+
+
       $("div.question, div.answer").empty();
       $("div.question").html("Question: " + moduleJson[count].question);
-      $("div.answer").html("Question: " + moduleJson[count].answer);
+      $("div.answer").html("Answer: " + moduleJson[count].answer);
 
       console.log("count after: " + count);
     } else if (moduleJson.length <= count) {
       count = 0;
       $("div.question").html("Question: " + moduleJson[count].question);
-      $("div.answer").html("Question: " + moduleJson[count].answer);
+      $("div.answer").html("Answer: " + moduleJson[count].answer);
     }
 
 
