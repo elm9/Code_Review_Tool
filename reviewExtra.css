@@ -1,4 +1,7 @@
-button {
-    width: 400%;
-    height: 300%;
+.card {
+    background-color: #fdcc9a;
+}
+.card-panel {
+    background-color: #303778;
+    color: white;
 }
