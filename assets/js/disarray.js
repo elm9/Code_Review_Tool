@@ -45,11 +45,12 @@ var understandArr = [];
 //use count for next/previous flashcard function
 var count = 0;
 
+var moduleApi = "./assets/data/module-api.json";
 
 //getJSON
 //put if statements here to get correct module (html, css, etc) to get correct json module file
 //for now only API
-$.getJSON("./assets/data/module-api.json", function(json) { //change direct link to json file w variable. to change what it gets on category button click
+$.getJSON(moduleApi, function(json) { //change direct link to json file w variable. to change what it gets on category button click
   moduleJson = json.cards;
   console.log(moduleJson);
 
