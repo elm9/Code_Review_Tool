@@ -62,8 +62,9 @@ $.getJSON("./assets/data/module-api.json", function(json) { //change direct link
 });
 
 
-//use this function to make next/previous question functionality
+//TODO: ignore getModule function for now, for testing
 //TODO: change function name! to reflect what it actually does
+//use this function to make next/previous question functionality?
 function getModule() {
   //use $.map instead of for loop ... will get there
   //how to use $.map to display first index, then add count oo
@@ -77,6 +78,7 @@ function getModule() {
     console.log(i, "-", moduleJson[i].answer);
   }
 }
+
 //function to toggle between question/answer on click
 function cardToggle() {
   //question div is hidden bc right now placeholder start text is in html .answer div, on click goes  shows .question div first
@@ -87,14 +89,11 @@ function cardToggle() {
 //on click to toggle q & a divs
   $('div.question, div.answer').on('click', function() {
     //output html to card
-    //need to assign count to something, right now default to 0 because of global var count
     $("div.question").html("Question: " + moduleJson[count].question);
     $("div.answer").html("Answer: " + moduleJson[count].answer);
     console.log(moduleJson[count].answer);
     console.log(moduleJson[count].question);
 
-    //increase count on click
-     //count++;
 
     //toggle between question and answer div
     //$.toggle does the business
@@ -104,11 +103,7 @@ function cardToggle() {
 }
 
 
-//TODO: NEXT, need to use var count=0, use count to get index(0, 1, 2) on click next count++ (only use count++ after question/answer from ModuleJson array
-// TODO: has been displayed
-
 //probably more functions needed
-console.log("working");
 //on clicks needed
 
 
@@ -119,10 +114,8 @@ cardToggle();
 
 
 
-//TODO: onclick review again
-//on click, add current array index, moduleJson[i] and store it in object/array for reviewAgainArr?
 
-
+//review and understand button/div functionality -- need to put in functions and clean up?
   $("#reviewContain").on("click", "#review, #understand", function (event) {
 
     event.stopPropagation();
@@ -141,7 +134,6 @@ cardToggle();
       understandArr.push(moduleJson[count]);
       console.log(understandArr);
 
-//TODO: important! - if statement: if moduleJson is empty , do something? alert that all cards are gone through, etc.
        //takes current array index out of the main moduleJson array
       moduleJson.splice(count,1);
       console.log(moduleJson);
@@ -175,19 +167,20 @@ cardToggle();
 
 //need else statement here to go to categories page?
 
+    //TODO: ignore these comments
 
     //get current array index items moduleJson[i] and push it to reviewArray
 //use count++ to control index
-    //TODO: next flashcard in array functionality
     //clear #flashcards container
     //    $("#cardContain").empty();
        //gen next flashcard array item
     //use function getModule? but rename to getQuestion or something?
+    //
 
   }); //end onclick
 
 
-//TODO: onclick i understand
+//TODO: onclick dont need!
 
 // doesnt do anything yet, make another for cardPrev, need to make html divs with id cardNext, and cardPrev on each side of flash card output
 // use count++ on next to go through array like.. moduleJson[count].answer/question/etc
