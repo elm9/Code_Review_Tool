@@ -139,7 +139,7 @@ cardToggle();
       understandArr.push(moduleJson[count]);
       console.log(understandArr);
 
-      
+//TODO: important! - if statement: if moduleJson is empty , do something? alert that all cards are gone through, etc.
        //takes current array index out of the main moduleJson array
       moduleJson.splice(count,1);
       console.log(moduleJson);
