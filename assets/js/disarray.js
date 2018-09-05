@@ -115,7 +115,7 @@ $("#Landing :Button").on("click", function () {
 
   var module = this.id;
   console.log(module);
-  var getthatmodule = ("/assets/data/" + module + ".json");
+  var getthatmodule = ("./assets/data/" + module + ".json");
   console.log(getthatmodule);
 
   $.getJSON(getthatmodule, function (json) {
