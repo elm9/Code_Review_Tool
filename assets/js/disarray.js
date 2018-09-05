@@ -84,14 +84,14 @@ function getModule() {
 function cardToggle() {
   //question div is hidden bc right now placeholder start text is in html .answer div, on click goes  shows .question div first
 
-  $('div.answer').hide();
+  $('.answer').hide();
 
 
 //on click to toggle q & a divs
-  $('div.question, div.answer').on('click', function() {
+  $('#cardContain').on('click', ".question, .answer", function() {
     //output html to card
-    $("div.question").html("Question: " + moduleJson[count].question);
-    $("div.answer").html("Answer: " + moduleJson[count].answer);
+    $(".question").html("Question: " + moduleJson[count].question);
+    $(".answer").html("Answer: " + moduleJson[count].answer);
     console.log(moduleJson[count].answer);
     console.log(moduleJson[count].question);
 
