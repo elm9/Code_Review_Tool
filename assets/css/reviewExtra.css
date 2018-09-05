@@ -10,4 +10,6 @@
     background-color: #14395a;
     color: #b0a06f;
 }
-
+#flashCards, .question, .answer {
+    height: 100%;
+    }
