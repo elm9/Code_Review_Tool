@@ -62,16 +62,13 @@ $.getJSON(moduleApi, function(json) { //change direct link to json file w variab
 
 });
 
-
 //TODO: ignore getModule function for now, for testing
 //TODO: change function name! to reflect what it actually does
-//use this function to make next/previous question functionality?
+//use this function to $.map out and generate flashCard stack divs, for 'i understand / review again' card stacks
 function getModule() {
   //use $.map instead of for loop ... will get there
   //how to use $.map to display first index, then add count oo
   // use if statement inside for loop? with var count = 0 (global), at end put count++, so if at index, go to next index
-  // if statement
-  // do something with count for NEXT function, use for loop to get next or prev index?
 
   for (var i = 0; i < moduleJson.length; i++) {
     console.log(i, "-", moduleJson[i].id);
@@ -84,22 +81,22 @@ function getModule() {
 function cardToggle() {
   //question div is hidden bc right now placeholder start text is in html .answer div, on click goes  shows .question div first
 
-  $('div.answer').hide();
+  $('.answer').hide();
 
 
 //on click to toggle q & a divs
-  $('div.question, div.answer').on('click', function() {
+  $('.question, .answer').on('click', function() {
     //output html to card
-    $("div.question").html("Question: " + moduleJson[count].question);
-    $("div.answer").html("Answer: " + moduleJson[count].answer);
+    $(".question").html("Question: " + moduleJson[count].question);
+    $(".answer").html("Answer: " + moduleJson[count].answer);
     console.log(moduleJson[count].answer);
     console.log(moduleJson[count].question);
 
 
     //toggle between question and answer div
     //$.toggle does the business
-      $('div.answer, div.question').toggle()
-    }
+      $('div.answer, div.question').toggle();
+  }
   );
 }
 
@@ -116,7 +113,7 @@ cardToggle();
 
 
 
-//review and understand button/div functionality -- need to put in functions and clean up?
+//review and understand button/div functionality -- need to put in functions and clean up? like cardToggle function.
   $("#reviewContain").on("click", "#review, #understand", function (event) {
 
     event.stopPropagation();
@@ -124,6 +121,7 @@ cardToggle();
     // console.log("json array length " + moduleJson.length);
     $('div.answer').hide();
     $('div.question').show();
+
     var id = $(this).attr('id');
     console.log("target id = " + id);
 

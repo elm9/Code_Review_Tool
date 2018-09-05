@@ -1,0 +1,162 @@
+
+{
+
+  "cards": [
+  {
+    "id": "1",
+    "question": "What is HTML?",
+    "answer": "Hypertext Markup Language, a standardized system for tagging text files to achieve font, color, graphic, and hyperlink effects on World Wide Web pages."
+  },
+  {   "id": "2",
+    "question": "What is HTML used for?",
+    "answer": "The Hypertext Markup Language (HTML) is a standard for describing the structure and presentation of information via the Internet."
+  },
+  {
+    "id": "3",
+    "question": "What is boilerplate code?",
+    "answer":"The 'boilerplate code' is any seemingly repetitive code that shows up again and again in order to get some result that seems like it ought to be much simpler."
+  },
+  {
+    "id":"4",
+    "question":"Sample boilerplate example",
+    "answer":"<html>
+      <head>
+      <title>My Website!</title>
+      </head>
+      <body>
+      <h1>My Great Web Site</h1>
+  <a href=”website.com”> Great website</a>
+</body>
+</html>"
+},
+  {
+    "id":"5",
+    "question":"Why do we need to create index.html file?",
+    "answer":"Creating an index file is a necessity for anyone who plans to run a website. An index file is the first web page that anyone visiting your website will see, and it need to be named “index.html” in order for web browsers to find it."
+  },
+  {
+    "id":"6",
+    "question":"<DOCTYPE>",
+    "answer":"Describes the version of html being used.<! DOCTYPE html> specifies HTML5 which is the most current type."
+  },
+  {
+    "id":"7",
+    "question":"<title>",
+    "answer":"Defines title that appears in the browser's title bar"
+  },
+  {
+    "id":"8",
+    "question":"<body>",
+    "answer": "All content that appears on the web page shows up between these two tags."
+  },
+  {
+    "id":"9",
+    "question":"<img>",
+    "answer":"an image tag"
+  },
+  {
+    "id":"10",
+    "question":"<img> attribute that tells the computer which .jpg to pull",
+    "answer": "src='image.jpg'"
+  },
+  {
+    "id":"11",
+    "question": "<img> attribute that gives a description of the image in case an image can't be viewed",
+    "answer": "alt='this is an image'"
+  },
+  {
+    "id":"12",
+    "question":"<img> attribute that specifies dimensions of an image",
+    "answer":"height=300
+    or
+    width="200""
+    //Numbers can change
+  },
+  {
+    "id": "13",
+    "question": "What will <figure style='float:left;'> do?",
+    "answer": "It will move the image so that it is to the left of any text"
+  },
+  {
+    "id":"14",
+    "question":"<a>",
+    "answer":"hyperlink tag"
+  },
+  {
+    "id":"15",
+    "question":"What two tags don't need a closing tag?",
+    "answer":"<img> and <br>"
+  },
+  {
+    "id":"16",
+    "question":"href",
+    "answer":"Tells your link where you want it to go."
+  },
+  {
+    "id":"17",
+    "question":"<a href='http://www.yahoo.com'>Go to Yahoo!</a>'"
+    "Is this a correct hyperlink?",
+      "answer":"Yes."
+  },
+  {
+    "id":"18",
+    "question":" <a href='moreinfo.html'>For more info from Erika's website</a>"
+    "Is this a correct hyperlink?",
+      "answer":"Yes."
+  },
+  {
+    "id":"19",
+    "question":"Attribute Basics",
+    "answer":"-all HTML tags can have attributes
+  -provides additional info about an element
+  -Attributes always come in name/value pairs like: name='value'
+    -Attribute values are always enclosed in quotes
+  -Equal sign = between attribute name and value
+  -Always has a start tag and an end tag <p> </p>"
+  },
+  {
+    "id":"20",
+    "question":"What is the difference between html and CSS?",
+    "answer":
+    "-HTML: standard markup language for creating Web pages
+    -HTML stands for Hypertext Markup Language
+  -Describes the STRUCTURE of Web pages using markup"
+  },
+  {
+    "id":"21",
+    "question":"What tag do you use to start a list?",
+    "answer":"<ul>"
+  },
+  {
+    "id":"22",
+    "question":"What tag do you use to specify bullet points in a list?",
+    "answer":"<li>"
+  },
+  {
+    "id":"23",
+    "question":"What does <html lang='en'> establish?",
+    "answer":"specifies the language,in this case it is en= English"
+  },
+  {
+    "id":"24",
+    "question":"How many headings can you have?",
+    "answer":"6 headings: <h1></h1>  The CEO, <h2></h2>  VP, <h3></h3>  Director, <h4></h4>  Middle management, <h5></h5>  Lowly assistant, <h6></h6>  Gets coffee for everyone"
+  },
+  {
+    "id":"25",
+    "question":"What do the different headings tell you?",
+    "answer":"Specifies sizes, <h1> would be the largest because it would be the 'most important'"
+  },
+  {
+    "id":"26",
+    "question":"<strong></strong>",
+    "answer":"The tags make the text bold"
+  },
+  {
+    "id":"27",
+    "question":"Indentation",
+    "answer":"The amount each line is spaced in from the margin"
+  }
+
+]
+}
