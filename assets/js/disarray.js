@@ -55,7 +55,7 @@ $.getJSON(moduleApi, function(json) { //change direct link to json file w variab
   console.log(moduleJson);
 
   //display initial question
-  $('div.question').html("Question: " + moduleJson[count].question);
+  $('div.question').html("<b><u>Question</u></b><br><br>" + moduleJson[count].question);
 
   //testing function for now
   getModule();
@@ -85,10 +85,11 @@ function cardToggle() {
 
 
 //on click to toggle q & a divs
-  $('.question, .answer').on('click', function() {
+  $('#cardContain').on('click', ".question, .answer", function() {
+
     //output html to card
-    $(".question").html("Question: " + moduleJson[count].question);
-    $(".answer").html("Answer: " + moduleJson[count].answer);
+    $(".question").html("<b><u>Question</u></b><br><br>" + moduleJson[count].question);
+    $(".answer").html("<b><u>Answer</u></b><br><br>" + moduleJson[count].answer);
     console.log(moduleJson[count].answer);
     console.log(moduleJson[count].question);
 
@@ -106,12 +107,27 @@ function cardToggle() {
 
 
 
+
+
+
 //on click toggle between question and answer state
 
 cardToggle();
 
+//genCards - review again array
+//how to display review again /
+function genReviewCards() {
+  $("#reviewCards").html(reviewArr.map(function (btnItems) {
+    return ("<div class='gifGen' data-topic='" + btnItems +"'>" + btnItems + '</div>');
+  }).join(" "));
+}
+//don't call this function
+//genReviewCards();
 
 
+$("#html-review").on("click", function () {
+  alert("Handler for .click() called.");
+});
 
 //review and understand button/div functionality -- need to put in functions and clean up? like cardToggle function.
   $("#reviewContain").on("click", "#review, #understand", function (event) {
@@ -152,14 +168,14 @@ cardToggle();
 
 
       $("div.question, div.answer").empty();
-      $("div.question").html("Question: " + moduleJson[count].question);
-      $("div.answer").html("Answer: " + moduleJson[count].answer);
+      $("div.question").html("<b><u>Question</u></b><br><br>" + moduleJson[count].question);
+      $("div.answer").html("<b><u>Answer</u></b><br><br>" + moduleJson[count].answer);
 
       console.log("count after: " + count);
     } else if (moduleJson.length <= count) {
       count = 0;
-      $("div.question").html("Question: " + moduleJson[count].question);
-      $("div.answer").html("Answer: " + moduleJson[count].answer);
+      $("div.question").html("<b><u>Question</u></b><br><br>" + moduleJson[count].question);
+      $("div.answer").html("<b><u>Answer</u></b><br><br>" + moduleJson[count].answer);
     }
 
 
