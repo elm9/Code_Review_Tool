@@ -1,0 +1,22 @@
+
+
+{
+
+    "cards": [
+      {
+        "id": "1",
+        "question": "What does JSON stand for?",
+        "answer": "JavaScript Object Notation"
+      },
+      {
+        "id": "2",
+        "question": "What is an API?",
+        "answer": "Application Programming Interface"
+      },
+      {
+        "id": "3",
+        "question": "Answer to the Ultimate Question of Life, the Universe, and Everything?",
+        "answer": "42"
+      }
+    ]
+}

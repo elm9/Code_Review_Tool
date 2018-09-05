@@ -1,0 +1,13 @@
+.card {
+    border-top-color: #e3dccc;
+    border-bottom-color: #b0a06f;
+    border-right-color: #b0a06f;
+    border-left-color: #e3dccc;
+    border-width: 5px;
+    color: #14395a;
+}
+.card-panel {
+    background-color: #14395a;
+    color: #b0a06f;
+}
+

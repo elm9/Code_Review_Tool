@@ -7,9 +7,76 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
 <!-- More CSS -->
-    <link rel="stylesheet" href="./reviewExtra.css">
+    <link rel="stylesheet" href="./assets/css/reviewExtra.css">
 
+<!-- that nice Work Sans Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">    
+<style>
+    body{
+        font-family: 'Work Sans';
+    }
+    button{
+        font-family: 'Work Sans';
+        font-weight: bolder;
+    }
+</style>
 </head>
+<script type="text/javascript"> 
+    // ----------------------------------------------------------------------------------------------------
+    // (i) store the q+a arrays 
+    // ----------------------------------------------------------------------------------------------------
+    // (Landing page)
+    // html Review Again array
+    // html I Understand This array
+    // css Review Again array
+    // css I Understand This array
+    // [other Review Again category arrays]
+    // [other I Understand This category arrays]
+    // (notLanding page)
+    // current Q+A array
+    // Review Again array
+    // I Understand This array
+    // ----------------------------------------------------------------------------------------------------
+    // (ii) initializing functions
+    // ----------------------------------------------------------------------------------------------------
+    // ----------------------------------------------------------------------------------------------------
+    // (iii) other functions
+    // ----------------------------------------------------------------------------------------------------
+    //***this function switches the overall view between the two main containers
+    function changeState() {
+        var x = document.getElementById('Landing');
+        var y = document.getElementById('notLanding');
+        if (x.style.display === 'none') {
+            x.style.display = 'block';
+            y.style.display = 'none';
+        } else {
+            x.style.display = 'none';
+            y.style.display = 'block';
+        }
+    }
+    // ----------------------------------------------------------------------------------------------------
+    // (iv) button clicks filled with the correct functions
+    // ----------------------------------------------------------------------------------------------------
+        //          (A) Landing page
+        // when user clicks on a category button:
+                // fill Q+A array with Review Again[category that was clicked] array
+                // display Q[0] in the Q+A box on notLanding page
+                // change state to notLanding page
+        // when user clicks on a category I Understand This button:
+                // fill Q+A array with I Understand This[category that was clicked] array
+                // display Q[0] in the Q+A box on notLanding page
+                // change state to notLanding page
+        //          (B) notLanding page
+        // when user clicks on the Q+A box:
+                // switch between Q[i] and A[i]
+        // when user clicks on Review Again:
+                // adjust Q+A display by i++ to display the next Q
+                // if there are no more Questions left in the array: display an alert and go back to the Landing Page
+        // when user clicks on I Understand This:
+                // take Q[i] and A[i] out of Review Again array and append to I Understand This array
+                // adjust Q+A display by i++ to display the next Q
+                // if there are no more Questions left in the array: display an alert and go back to the Landing Page
+</script>
 <body>
 <!-- Some sort of header, idk the page seemed like it needed something... 
      I'm putting this here as a placeholder, let's talk later about what we actually want  --> 
@@ -20,11 +87,10 @@
             but if anyone has a better idea on how to do that let me know  -->
     <div class="container">
 
-        <div class="row">
 
             <div class="row">
 
-                <div class="col s12 card-panel blue darken-4 white-text">
+                <div class="col s12 card-panel">
 
                     <h1 class="center-align">CARD STACKS</h1>
 
@@ -32,20 +98,21 @@
             
             </div>
 
-        </div>
+
         <div class="row">
             
-            
 
-            <div class="col s4 offset-s1 card-panel amber accent-1">
-                <h2 class="center-align">HTML</h2>
-            </div>
+            <button id="html-review" class="col s5 card small">
+                <h2 class="center-align">Review HTML</h2>
+            </button>
 
-            
 
-            <div class="col s4 offset-s2 card-panel amber accent-1">
-                <h2 class="center-align">CSS</h2>
-            </div>
+
+
+            <button id="html-understood" class="col s5 card small offset-s2">
+                <h2 class="center-align">Understood HTML</h2>
+            </button>
+
 
             
         </div>
@@ -54,31 +121,92 @@
             
            
     
-            <div class="col s4 offset-s1 card-panel amber accent-1">
-                <h2 class="center-align">JavaScript</h2>
-            </div>
-    
+
+            <button id="css-review" class="col s5 card small">
+                <h2 class="center-align">Review CSS</h2>
+            </button>
+
             
     
-            <div class="col s4 offset-s2 card-panel amber accent-1">
-                <h2 class="center-align">jQuery</h2>
-            </div>
+
+            <button id="css-understood" class="col s5 card small offset-s2">
+                <h2 class="center-align">Understood CSS</h2>
+            </button>
+
     
            
         </div>
+
         <div class="row">
             
             
 
-            <div class="col s4 offset-s1 card-panel amber accent-1">
-                <h2 class="center-align">API</h2>
-            </div>
+            <button id="javascript-review" class="col s5 card small">
+                <h2 class="center-align">Review JavaScript</h2>
+            </button>
+
+    
+            
+
+            <button id="javascript-understood" class="col s5 card small offset-s2">
+                <h2 class="center-align">Understood JavaScript</h2>
+            </button>
+
+            
+
+        </div>
+
+        <div class="row">
+            
+            
+
+            <button id="jquery-review" class="col s5 card small">
+                <h2 class="center-align">Review jQuery</h2>
+            </button>
     
             
     
-            <div class="col s4 offset-s2 card-panel amber accent-2">
-                <h2 class="center-align">REVIEW AGAIN</h2>
-            </div>
+
+            <button id="jquery-understood" class="col s5 card small offset-s2">
+                <h2 class="center-align">Understood jQuery</h2>
+            </button>
+    
+            
+
+        </div>
+
+        <div class="row">
+            
+            
+
+
+            <button id="api-review" class="col s5 card small">
+                <h2 class="center-align">Review API</h2>
+            </button>
+    
+            
+    
+            <button id="api-understood" class="col s5 card small offset-s2">
+                <h2 class="center-align">Understood API</h2>
+            </button>
+    
+            
+
+        </div>
+
+        <div class="row">
+            
+            
+
+            <button id="git-review" class="col s5 card small">
+                <h2 class="center-align">Review Git/GitHub</h2>
+            </button>
+    
+            
+
+            <button id="git-understood" class="col s5 card small offset-s2">
+                <h2 class="center-align">Understood Git/GitHub</h2>
+            </button>
     
             
 
@@ -90,40 +218,52 @@
     <div class="container">
         <div class="row">
             
-            <div class="col s12 card-panel blue darken-4 white-text">
+            <div class="col s12 card-panel">
 
                 <h1 class="center-align">Q & A</h1>
             </div>
         </div>
         <div class="row">
 
-            <div class="col s10 offset-s1 card-panel amber accent-1">
+            <div id="cardContain" class="col s10 offset-s1 card large">
                 <!-- card content -->
-                <p>(filler text, someday this will be our Q/A card)</p>
+                <div id="flashCards">
+                    <div class="question">
+
+                    </div>
+                    <div class="answer">
+
+                    </div>
+                </div>
+
             </div>
 
         </div>
-        <div class="row">
+        <div id="reviewContain" class="row">
 
-            <div class="col s4 offset-s1 card-panel amber accent-2">
+            <button id="review" class="col s5 card small">
 
                 <h2 class="center-align">REVIEW AGAIN</h2>
 
-            </div>
-            <div class="col s4 offset-s2 card-panel amber accent-2">
+            </button>
+
+            <button id="understand" class="col s5 offset-s2 card small">
 
                 <h2 class="center-align">I UNDERSTAND THIS</h2>
                     
-            </div>
+            </button>
         </div>
 
     </div>
 
     
-<!-- Javascript link goes below this line -->
 
 <!-- Materialize -->
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+<!-- jQuery link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    
+<!-- Javascript link goes below this line -->
+    <script src="./assets/js/disarray.js"></script>
 </body>
 </html>
