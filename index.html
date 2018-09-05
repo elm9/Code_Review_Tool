@@ -19,6 +19,10 @@
         font-family: 'Work Sans';
         font-weight: bolder;
     }
+    /***sets the initial display state of Q+A container to none */
+    #notLanding {
+           display: none;
+       }
 </style>
 </head>
 <script type="text/javascript"> 
@@ -78,6 +82,7 @@
                 // if there are no more Questions left in the array: display an alert and go back to the Landing Page
 </script>
 <body>
+        <button onclick="changeState()">Try it</button>
 <!-- Some sort of header, idk the page seemed like it needed something... 
      I'm putting this here as a placeholder, let's talk later about what we actually want  --> 
 
@@ -85,7 +90,7 @@
 <!-- Here's the first container, this will be our CARD STACKS -->
     <!-- I think we should be able to show and hide them by using the invisiblity property with CSS
             but if anyone has a better idea on how to do that let me know  -->
-    <div class="container">
+    <div id="Landing" class="container">
 
 
             <div class="row">
@@ -215,7 +220,7 @@
     </div>
 
 <!-- Here's the second container, this will be the Q & A PAGE  -->
-    <div class="container">
+    <div id="notLanding" class="container">
         <div class="row">
             
             <div class="col s12 card-panel">
