@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+
+
+{
+
+    "cards": [
+      {
+        "id": "1",
+        "question": "What does JSON stand for?",
+        "answer": "JavaScript Object Notation"
+      },
+      {
+        "id": "2",
+        "question": "What is an API?",
+        "answer": "Application Programming Interface"
+      },
+      {
+        "id": "3",
+        "question": "Answer to the Ultimate Question of Life, the Universe, and Everything?",
+        "answer": "42"
+      }
+    ]
+=======
 {
     "id": "1",
     "question":"What is API?",
@@ -87,4 +110,5 @@
     "id": "18",
     "question":"callback",
     "answer": "instructions that I can do something with when I get a response back; call on instructions when I get a response back"
+>>>>>>> master
 }

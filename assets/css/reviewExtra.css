@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 button:visited{
    background-color: #e3dccc;
 }
@@ -10,6 +12,7 @@ button:active{
 button:focus{
     background-color: #e3dccc;
 }
+>>>>>>> master
 .card {
     border-top-color: #e3dccc;
     border-bottom-color: #b0a06f;
@@ -22,6 +25,32 @@ button:focus{
     background-color: #14395a;
     color: #b0a06f;
 }
+<<<<<<< HEAD
+
+body {
+    font-family: 'Work Sans';
+}
+
+button {
+    font-family: 'Work Sans';
+    font-weight: bolder;
+}
+
+/***sets the initial display state of Q+A container to none */
+#notLanding {
+    display: none;
+}
+
+#html-understood,
+#css-understood,
+#javascript-understood,
+#jquery-understood,
+#api-understood,
+#git-understood {
+    display: none;
+}
+
+=======
 #flashCards, .question, .answer {
     height: 100%;
     text-align: center;
@@ -29,3 +58,4 @@ button:focus{
     font-size: xx-large;
     
 }
+>>>>>>> master
