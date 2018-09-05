@@ -1,117 +1,119 @@
 {
-   "id": "1",
-   "question": "What does CSS stand for?",
-   "answer": "Cascading Style Sheets"
-},
-{
-    "id": "2",
-    "question": "What is the correct HTML for referring to an external style sheet?",
-    "answer": "<link rel='stylesheet' type='text/css' href='mystyle.css'>"
- },
- {
-    "id": "3",
-    "question": "Where in an HTML document is the correct place to refer to an external style sheet?",
-    "answer": "In the <head> section"
- },
- {
-    "id": "4",
-    "question": "Which HTML tag is used to define an internal style sheet?",
-    "answer": "<style>"
- },
- {
-    "id": "5",
-    "question": " Which HTML attribute is used to define inline styles?",
-    "answer": "style"
- },
- {
-    "id": "6",
-    "question": "The correct CSS syntax",
-    "answer": "body {color: green;}"
- },
- {
-    "id": "7",
-    "question": "How do you insert a comment in a CSS file?",
-    "answer": "/ this is a nice comment /"
- },
- {
-    "id": "8",
-    "question": "Which property is used to change the background color?",
-    "answer": "background-color"
- },
- {
-    "id": "9",
-    "question": "Which CSS property is used to change the text color of an element?",
-    "answer": "color"
- },
- {
-    "id": "10",
-    "question": "Which CSS property controls the text size?",
-    "answer": "font-size"
- },
- {
-    "id": "11",
-    "question": "The correct CSS syntax for making all the <p> elements bold?",
-    "answer": "p {font-weight:bold;}"
- },
- {
-    "id": "12",
-    "question": "How do you make each word in a text start with a capital letter?",
-    "answer": "text-transform:capitalize"
- },
- {
-    "id": "13",
-    "question": "How do you make the text bold?",
-    "answer": "font-weight:bold;"
- },
- {
-    "id": "14",
-    "question": "Which property is used to change the left margin of an element?",
-    "answer": "margin-left"
- },
- {
-    "id": "15",
-    "question": "When using the padding property; are you allowed to use negative values?",
-    "answer": "No"
- },
- {
-    "id": "16",
-    "question": "absolute",
-    "answer": "Specifies that the container should be positioned starting from the screen edge, and other objects should ignore it"
- },
- {
-    "id": "17",
-    "question": "relative",
-    "answer": "Specifies that the container should be positioned starting from its natural position, and other objects should act as if it is still in its original location"
- },
- {
-    "id": "18",
-    "question": "top",
-    "answer": "How far from the top starting point the container should be placed"
- },
- {
-    "id": "19",
-    "question": "left",
-    "answer": "how far from the left starting point the container should be placed"
- },
- {
-    "id": "20",
-    "question": "width",
-    "answer": "Specifies the width of the container"
- },
- {
-    "id": "21",
-    "question": "height",
-    "answer": "specifies the height of the container"
- },
- {
-    "id": "22",
-    "question": "How do you select all p elements inside a div element?",
-    "answer": "div p"
- },
- {
-    "id": "23",
-    "question": "How do you group selectors?",
-    "answer": "Separate each selector with a comma"
- }
- 
- 
+    "cards": [
+        {
+            "id": "1",
+            "question": "What does CSS stand for?",
+            "answer": "Cascading Style Sheets"
+        },
+        {
+            "id": "2",
+            "question": "What is the correct HTML for referring to an external style sheet?",
+            "answer": "<link rel='stylesheet' type='text/css' href='mystyle.css'>"
+        },
+        {
+            "id": "3",
+            "question": "Where in an HTML document is the correct place to refer to an external style sheet?",
+            "answer": "In the <head> section"
+        },
+        {
+            "id": "4",
+            "question": "Which HTML tag is used to define an internal style sheet?",
+            "answer": "<style>"
+        },
+        {
+            "id": "5",
+            "question": " Which HTML attribute is used to define inline styles?",
+            "answer": "style"
+        },
+        {
+            "id": "6",
+            "question": "The correct CSS syntax",
+            "answer": "body {color: green;}"
+        },
+        {
+            "id": "7",
+            "question": "How do you insert a comment in a CSS file?",
+            "answer": "/ this is a nice comment /"
+        },
+        {
+            "id": "8",
+            "question": "Which property is used to change the background color?",
+            "answer": "background-color"
+        },
+        {
+            "id": "9",
+            "question": "Which CSS property is used to change the text color of an element?",
+            "answer": "color"
+        },
+        {
+            "id": "10",
+            "question": "Which CSS property controls the text size?",
+            "answer": "font-size"
+        },
+        {
+            "id": "11",
+            "question": "The correct CSS syntax for making all the <p> elements bold?",
+            "answer": "p {font-weight:bold;}"
+        },
+        {
+            "id": "12",
+            "question": "How do you make each word in a text start with a capital letter?",
+            "answer": "text-transform:capitalize"
+        },
+        {
+            "id": "13",
+            "question": "How do you make the text bold?",
+            "answer": "font-weight:bold;"
+        },
+        {
+            "id": "14",
+            "question": "Which property is used to change the left margin of an element?",
+            "answer": "margin-left"
+        },
+        {
+            "id": "15",
+            "question": "When using the padding property; are you allowed to use negative values?",
+            "answer": "No"
+        },
+        {
+            "id": "16",
+            "question": "absolute",
+            "answer": "Specifies that the container should be positioned starting from the screen edge, and other objects should ignore it"
+        },
+        {
+            "id": "17",
+            "question": "relative",
+            "answer": "Specifies that the container should be positioned starting from its natural position, and other objects should act as if it is still in its original location"
+        },
+        {
+            "id": "18",
+            "question": "top",
+            "answer": "How far from the top starting point the container should be placed"
+        },
+        {
+            "id": "19",
+            "question": "left",
+            "answer": "how far from the left starting point the container should be placed"
+        },
+        {
+            "id": "20",
+            "question": "width",
+            "answer": "Specifies the width of the container"
+        },
+        {
+            "id": "21",
+            "question": "height",
+            "answer": "specifies the height of the container"
+        },
+        {
+            "id": "22",
+            "question": "How do you select all p elements inside a div element?",
+            "answer": "div p"
+        },
+        {
+            "id": "23",
+            "question": "How do you group selectors?",
+            "answer": "Separate each selector with a comma"
+        }
+    ]
+}
