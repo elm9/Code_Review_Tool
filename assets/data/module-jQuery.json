@@ -1,0 +1,78 @@
+   {
+    "id": "1",
+    "question": "What is jQuery?",
+    "answer": "Dynamically inserting, updating or removing HTML."
+              "Registering click or other change events."
+              "Animating HTML elements."
+              "Download data from databases."
+   },
+   {
+     "id": "2",
+     "question": "jQuery is JavaScript library or JSON library?",
+     "answer": "JavaScript library."
+   },
+   {
+     "id": "3",
+     "question": "What scripting language is jQuery written in?",
+     "answer":"JavaScript"
+   },
+   {
+     "id": "4",
+     "question": "Which sign does jQuery use as a shortcut for jQuery?",
+     "answer": "$ sign"
+   },
+   {
+     "id": "5",
+     "question": "Is jQuery a library for client scripting or server scripting?",
+     "answer": "Client scripting."
+   }
+   {
+    "id": "6",
+    "question": "What is CDN?",
+    "answer": "Content Delivery Network (CDN) is a system of computers that exist all over the world and cache files for users to access. CDNs can greatly reduce the load time of a page by offering files at a higher bandwidth from a server that is physically closer to your visitor than your web server might be."
+   },
+   {
+    "id": "7",
+    "question":"What does this code represent for? <script   src='https://code.jquery.com/jquery-3.3.1.min.js'   integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='   crossorigin='anonymous'></script>",
+    "answer": "jQuery CDN"
+   },
+   {
+    "id": "8",
+    "question": "Where do you place jQuery code?",
+    "answer":"adding a line in between the opening (<head>) and closing (</head>) HTML header tags."
+   },
+   {
+    "id": "9",
+    "question": "Which jQuery function is used to prevent code from running, before the document is finished loading?",
+    "answer": "$(document).ready()"
+   },
+   {
+    "id":"10",
+    "question":"What jQuery method is used to insert content after a selected element?",
+    "answer":"after()"
+   },
+   {
+    "id":"11",
+    "question":"The jQuery DOM manipulation method that returns or declares text content for selected elements is",
+    "answer":"text()"
+   }
+   {
+    "id":"12",
+    "question":"What jQuery method is used to identify attribute values?",
+    "answer":"attr()"
+   },
+   {
+    "id":"13",
+    "question":"What type of jQuery selector can be used to identify elements that make use of a specific class?",
+    "answer":"Class Selector"
+   },
+   {
+    "id":"14",
+    "question": "What type of jQuery selector can be used to identify elements that make use of a specific class?",
+    "answer":"document.ready()"
+   },
+   {
+    "id": "15",
+    "question": "What is the name of the jQuery element that allows you to select and manipulate HTML objects?",
+    "answer": "Selectors"
+   }
