@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Code Review</title>
+
+    <!-- Materialize-->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <!-- More CSS -->
+    <link rel="stylesheet" href="./assets/css/reviewExtra.css">
+
+    <!-- that nice Work Sans Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    
+</head>
+
+<body>
+    <button onclick="changeState()">Try it</button>
+    <!-- Some sort of header, idk the page seemed like it needed something... 
+     I'm putting this here as a placeholder, let's talk later about what we actually want  -->
+
+
+    <!-- Here's the first container, this will be our CARD STACKS -->
+    <!-- I think we should be able to show and hide them by using the invisiblity property with CSS
+            but if anyone has a better idea on how to do that let me know  -->
+    <div id="Landing" class="container">
+
+
+        <div class="row">
+
+            <div class="col s12 card-panel">
+
+                <h1 class="center-align">CARD STACKS</h1>
+
+            </div>
+
+        </div>
+
+
+        <div class="row">
+
+
+            <button id="module-html" class="col s5 card small">
+                <h2 class="center-align">Review HTML</h2>
+            </button>
+
+
+
+
+            <button id="html-understood" class="col s5 card small offset-s2">
+                <h2 class="center-align">Understood HTML</h2>
+            </button>
+
+
+
+        </div>
+
+        <div class="row">
+
+
+
+
+            <button id="module-css" class="col s5 card small">
+                <h2 class="center-align">Review CSS</h2>
+            </button>
+
+
+
+
+            <button id="css-understood" class="col s5 card small offset-s2">
+                <h2 class="center-align">Understood CSS</h2>
+            </button>
+
+
+
+        </div>
+
+        <div class="row">
+
+
+
+            <button id="module-javascript" class="col s5 card small">
+                <h2 class="center-align">Review JavaScript</h2>
+            </button>
+
+
+
+
+            <button id="javascript-understood" class="col s5 card small offset-s2">
+                <h2 class="center-align">Understood JavaScript</h2>
+            </button>
+
+
+
+        </div>
+
+        <div class="row">
+
+
+
+            <button id="module-jquery" class="col s5 card small">
+                <h2 class="center-align">Review jQuery</h2>
+            </button>
+
+
+
+
+            <button id="jquery-understood" class="col s5 card small offset-s2">
+                <h2 class="center-align">Understood jQuery</h2>
+            </button>
+
+
+
+        </div>
+
+        <div class="row">
+
+
+
+
+            <button id="module-api" class="col s5 card small">
+                <h2 class="center-align">Review API</h2>
+            </button>
+
+
+
+            <button id="api-understood" class="col s5 card small offset-s2">
+                <h2 class="center-align">Understood API</h2>
+            </button>
+
+
+
+        </div>
+
+        <div class="row">
+
+
+
+            <button id="module-git" class="col s5 card small">
+                <h2 class="center-align">Review Git/GitHub</h2>
+            </button>
+
+
+
+            <button id="git-understood" class="col s5 card small offset-s2">
+                <h2 class="center-align">Understood Git/GitHub</h2>
+            </button>
+
+
+
+        </div>
+
+    </div>
+
+    <!-- Here's the second container, this will be the Q & A PAGE  -->
+    <div id="notLanding" class="container">
+        <div class="row">
+
+            <div class="col s12 card-panel">
+
+                <h1 class="center-align">Q & A</h1>
+            </div>
+        </div>
+        <div class="row">
+
+            <div id="cardContain" class="col s10 offset-s1 card large">
+                <!-- card content -->
+                <div id="flashCards">
+                    <div class="question">
+
+                    </div>
+                    <div class="answer">
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div id="reviewContain" class="row">
+
+            <button id="review" class="col s5 card small">
+
+                <h2 class="center-align">REVIEW AGAIN</h2>
+
+            </button>
+
+            <button id="understand" class="col s5 offset-s2 card small">
+
+                <h2 class="center-align">I UNDERSTAND THIS</h2>
+
+            </button>
+        </div>
+
+    </div>
+
+
+
+    <!-- Materialize -->
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <!-- jQuery link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Javascript link goes below this line -->
+    <script src="./assets/js/disarray.js"></script>
+</body>
+
+</html>
