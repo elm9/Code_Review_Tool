@@ -1,8 +1,11 @@
 .card {
-    background-color: #fdcc9a;
+    border-top-color: #fdcc9a;
+    border-bottom-color: #fdcc9a;
+    border-width: 5px;
+    color: #303778;
 }
 .card-panel {
     background-color: #303778;
-    color: white;
+    color: #fdcc9a;
 }
 
