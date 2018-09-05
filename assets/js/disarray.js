@@ -111,7 +111,7 @@ cardToggle();
 
 
 $("#Landing :Button").on("click", function () {
-  alert(this.id + "was just clicked!")
+  // alert(this.id + "was just clicked!")
 
   var module = this.id;
   console.log(module);
