@@ -1,3 +1,15 @@
+button:visited{
+   background-color: #e3dccc;
+}
+button:hover{
+    background-color: #e3dccc;
+}
+button:active{
+    background-color: #e3dccc;
+}
+button:focus{
+    background-color: #e3dccc;
+}
 .card {
     border-top-color: #e3dccc;
     border-bottom-color: #b0a06f;
@@ -12,4 +24,5 @@
 }
 #flashCards, .question, .answer {
     height: 100%;
-    }
+    text-align: center;
+}
