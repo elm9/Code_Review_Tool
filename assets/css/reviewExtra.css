@@ -25,4 +25,7 @@ button:focus{
 #flashCards, .question, .answer {
     height: 100%;
     text-align: center;
+    padding: 10%;
+    font-size: xx-large;
+    
 }
