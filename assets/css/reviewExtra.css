@@ -1,3 +1,18 @@
+<<<<<<< HEAD
+=======
+button:visited{
+   background-color: #e3dccc;
+}
+button:hover{
+    background-color: #e3dccc;
+}
+button:active{
+    background-color: #e3dccc;
+}
+button:focus{
+    background-color: #e3dccc;
+}
+>>>>>>> master
 .card {
     border-top-color: #e3dccc;
     border-bottom-color: #b0a06f;
@@ -10,6 +25,7 @@
     background-color: #14395a;
     color: #b0a06f;
 }
+<<<<<<< HEAD
 
 body {
     font-family: 'Work Sans';
@@ -34,3 +50,12 @@ button {
     display: none;
 }
 
+=======
+#flashCards, .question, .answer {
+    height: 100%;
+    text-align: center;
+    padding: 10%;
+    font-size: xx-large;
+    
+}
+>>>>>>> master

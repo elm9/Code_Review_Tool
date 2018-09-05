@@ -1,0 +1,211 @@
+{
+    "id": "1",
+    "question":"ls",
+    "answer": "Directory listing"
+},
+{
+    "id": "2",
+    "question":"ls -al",
+    "answer": "Formatted listing with hidden files"
+},
+{
+    "id": "3",
+    "question":"cd dir ",
+    "answer": "Change directory"
+},
+{
+    "id": "4",
+    "question":"cd",
+    "answer": "Change to home"
+},
+{
+    "id": "5",
+    "question":"pwd",
+    "answer": "Show current directory"
+},
+{
+    "id": "6",
+    "question":"mkdir dir",
+    "answer": "Create directory dir"
+},
+{
+    "id": "7",
+    "question":"rm file",
+    "answer": "Delete file"
+},
+{
+    "id": "8",
+    "question":"rm -r dir",
+    "answer": "Delete directory dir"
+},
+{
+    "id": "9",
+    "question":"rm -r file",
+    "answer": "Force remove file"
+},
+{
+    "id": "10",
+    "question":"rm -rf dir",
+    "answer": "Force remove directory dir"
+},
+{
+    "id": "11",
+    "question":"cp file1 file2",
+    "answer": "Copy file1 to file2"
+},
+{
+    "id": "12",
+    "question":"cp -r dir1 dir2",
+    "answer": "Copy dir1 to dir2;create dir2 if it doesn't exist"
+},
+{
+    "id": "13",
+    "question":"mv file1 file2",
+    "answer": "Rename or move file1 to file2 if file2 is an existing directory,moves file1 into directory file2"
+},
+{
+    "id": "14",
+    "question":"ln -s file link",
+    "answer": "Create symbolic link to file"
+},
+{
+    "id": "15",
+    "question":"touch file",
+    "answer": "Create or update file"
+},
+{
+    "id": "16",
+    "question":"cat > file",
+    "answer": "Places standard input into file"
+},
+{
+    "id": "17",
+    "question":"more file",
+    "answer": "Output the contents of file"
+},
+{
+    "id": "18",
+    "question":"head file",
+    "answer": "Output the first 10 lines of file"
+},
+{
+    "id": "19",
+    "question":"tail file",
+    "answer": "Output the last 10 lines of file"
+},
+{
+    "id": "20",
+    "question":"tail -f file",
+    "answer": "Output the contents of file as it grows, starting with the last 10 lines"
+},
+{
+    "id": "21",
+    "question":"create a new local repository",
+    "answer": "git init [project name]"
+},
+{
+    "id": "22",
+    "question":"Download from an existing repository",
+    "answer": "git clone my_url"
+},
+{
+    "id": "23",
+    "question":"List new or modified files not yet committed",
+    "answer": "git status"
+},
+{
+    "id": "24",
+    "question":"Show the changes to files not yet staged",
+    "answer": "git diff"
+},
+{
+    "id": "25",
+    "question":"Show the changes to staged files",
+    "answer": "git diff --cached"
+},
+{
+    "id": "26",
+    "question":"Show all staged and unstaged file changes",
+    "answer": "git diff HEAD"
+},
+{
+    "id": "27",
+    "question":"Show the cahnges between two commit ids",
+    "answer": "git diff commit1 commit2"
+},
+{
+    "id": "28",
+    "question":"List the change dates and authors for a file",
+    "answer": "git blame [file]"
+},
+{
+    "id": "29",
+    "question":"Show the file changes for a commit id and/or file",
+    "answer": "git show [commit] : [file]"
+},
+{
+    "id": "30",
+    "question":"Show full change history",
+    "answer": "git log"
+},
+{
+    "id": "31",
+    "question":"Show change history for file/directory including diffs",
+    "answer": "git log -p [file/directory]"
+},
+{
+    "id": "32",
+    "question":"Stages the file,ready for commit",
+    "answer": "git add [file]"
+},
+{
+    "id": "33",
+    "question":"Stage all changed files,ready for commit",
+    "answer": ""
+},
+{
+    "id": "34",
+    "question":"Commit all staged files to versioned history",
+    "answer": "git commit -m 'commit message'"
+},
+{
+    "id": "35",
+    "question":"Commit all your tracked files to versioned history",
+    "answer": "git commit -am 'commit message'"
+},
+{
+    "id": "36",
+    "question":"Unstages file,keeping the file changes",
+    "answer": "git reset [file]"
+},
+{
+    "id": "37",
+    "question":"Revert everything to the last commit",
+    "answer": "git reset --hard"
+},
+{
+    "id": "38",
+    "question":"get the latest changes from origin(no merge)",
+    "answer": "git fetch"
+},
+{
+    "id": "39",
+    "question":"Fetch the latest changes from origin and merge",
+    "answer": "git pull"
+},
+{
+    "id": "40",
+    "question":"Fetch the latest changes from origin and rebase",
+    "answer": "git pull --rebase"
+},
+{
+    "id": "41",
+    "question":"Push local changes to the origin",
+    "answer": "git push"
+},
+{
+    "id": "42",
+    "question":"When in doubt,use git help",
+    "answer": "git command --help"
+}
+
