@@ -160,64 +160,100 @@ $("#reviewContain").on("click", "#review, #understand", function (event) {
     //if review again is clicked
     if (id === "review") {
 
+        reviewArr.push(moduleJson[count]);
+        console.log(reviewArr);
 
-        if (moduleJson.length <= reviewArr.length) {
+        //output to tinyCards
+        tinyReviewCards = reviewArr.map(a => a.id);
+
+        console.log(tinyReviewCards);
+
+        moduleJson.splice(count, 1); //TODO: FIX THIS!
+        console.log(moduleJson);
+        count = count - 1; //OMFG
+
+
+        if (moduleJson.length == 0) {
             count = 0;
             var repeat = confirm("Do you want to review the questions you had difficulty with again?")
             if (repeat) {
                 alert("okay we'll repeat");
+                moduleJson = reviewArr;
+                reviewArr = [];
+
+                //display initial question
+                $('div.question').html("Question: " + moduleJson[count].question);
+
+                //array for  i understand card data
+                understandArr = [];
+
+
             }
             else {
                 alert("good job, going back to categories");
+                reviewArr = [];
+
+                //array for  i understand card data
+                understandArr = [];
                 changeState();
             }
-
-
-
-        } else {
-
-            reviewArr.push(moduleJson[count]);
-            console.log(reviewArr);
-
-            //output to tinyCards
-            tinyReviewCards = reviewArr.map(a => a.id);
-
-            console.log(tinyReviewCards);
-
         }
 
 
     }
     //if i understand clicked
     else if (id === "understand") {
-        if (moduleJson.length === 0) {
 
+        understandArr.push(moduleJson[count]);
+        console.log(understandArr);
+
+        //output to tinyCards
+        tinyUnderstandCards = understandArr.map(a => a.id);
+        console.log(tinyUnderstandCards);
+
+
+        //takes current array index out of the main moduleJson array
+        moduleJson.splice(count, 1); //TODO: FIX THIS!
+        console.log(moduleJson);
+        count = count - 1; //OMFG
+
+
+        if ((moduleJson.length === 0) && (reviewArr.length === 0)) {
+
+            alert("congratulations, you understand all of it!")
+            changeState();
+        }
+
+        else if ((moduleJson.length === 0) && (reviewArr.length !== 0)) {
+            count = 0
             var repeat = confirm("Do you want to review the questions you had difficulty with again?")
             if (repeat) {
                 alert("okay we'll repeat");
+                moduleJson = reviewArr;
+                reviewArr = [];
+
+                //display initial question
+                $('div.question').html("Question: " + moduleJson[count].question);
+
+                //array for  i understand card data
+                understandArr = [];
+
+
             }
             else {
                 alert("good job, going back to categories");
+                reviewArr = [];
+
+                //array for  i understand card data
+                understandArr = [];
                 changeState();
             }
 
-        } else {
-            understandArr.push(moduleJson[count]);
-            console.log(understandArr);
-
-            //output to tinyCards
-            tinyUnderstandCards = understandArr.map(a => a.id);
-            console.log(tinyUnderstandCards);
-
-
-            //takes current array index out of the main moduleJson array
-            moduleJson.splice(count, 1); //TODO: FIX THIS!
-            console.log(moduleJson);
-            count = count - 1; //OMFG
-
-
         }
+
+
     }
+
 
 
     // console.log(count);
