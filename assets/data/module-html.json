@@ -18,15 +18,7 @@
         {
             "id": "4",
             "question": "Sample boilerplate example",
-            "answer":"<html>
-            <head>
-            <title>My Website!</title>
-            </head>
-            <body>
-            <h1>My Great Web Site</h1>
-            <a href=”website.com”> Great website</a>
-            </body>
-            </html>"
+            "answer":"<html> <head> <title>My Website!</title> </head> <body> <h1> My Great Web Site</h1><ahref=”website.com”> Great website</a></body> </html>"
         },
         {
             "id": "5",
@@ -60,7 +52,7 @@
         },
         {
             "id": "11",
-            "question": "<img> attribute that gives a description of the image in case an image can't be viewed",
+            "question": "< img > attribute that gives a description of the image in case an image can't be viewed",
             "answer": "alt='this is an image'"
         },
         {
@@ -91,33 +83,23 @@
         },
         {
             "id": "17",
-            "question": "<a href='http://www.yahoo.com'>Go to Yahoo!</a>'"
-               "Is this a correct hyperlink?",
+            "question": "<a href='http://www.yahoo.com'>Go to Yahoo!</a>' Is this a correct hyperlink?",
             "answer": "Yes."
         },
         {
             "id": "18",
-            "question": " <a href='moreinfo.html'>For more info from Erika's website</a>"
-               "Is this a correct hyperlink?",
+            "question": " <a href='moreinfo.html'>For more info from Erika's website</a>  Is this a correct hyperlink?",
             "answer": "Yes."
         },
         {
             "id": "19",
             "question": "Attribute Basics",
-            "answer":"-all HTML tags can have attributes
-              -provides additional info about an element
-              -Attributes always come in name/value pairs like: name='value'
-              -Attribute values are always enclosed in quotes
-              -Equal sign = between attribute name and value
-              -Always has a start tag and an end tag <p> </p>"
+            "answer":"-all HTML tags can have attributes -provides additional info about an element -Attributes always come in name/value pairs like: name='value' -Attribute values are always enclosed in quotes -Equal sign = between attribute name and value -Always has a start tag and an end tag <p> </p>"
         },
         {
             "id": "20",
             "question": "What is the difference between html and CSS?",
-            "answer":
-              "-HTML: standard markup language for creating Web pages
-               -HTML stands for Hypertext Markup Language
-               -Describes the STRUCTURE of Web pages using markup"
+            "answer":"-HTML: standard markup language for creating Web pages -HTML stands for Hypertext Markup Language -Describes the STRUCTURE of Web pages using markup"
         },
         {
             "id": "21",
@@ -137,14 +119,7 @@
         {
             "id": "24",
             "question": "How many headings can you have?",
-            "answer":"6 headings 
-
-              <h1></h1>  The CEO
-              <h2></h2>  VP
-              <h3></h3>  Director
-              <h4></h4>  Middle management
-              <h5></h5>  Lowly assistant
-              <h6></h6>  Gets coffee for everyone"
+            "answer":"6 headings <h1></h1>  The CEO <h2></h2>  VP <h3></h3>  Director <h4></h4>  Middle management <h5></h5>  Lowly assistant <h6></h6>  Gets coffee for everyone"
         },
         {
             "id": "25",
