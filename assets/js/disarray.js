@@ -86,6 +86,8 @@ function changeState() {
         x.style.display = 'none';
         y.style.display = 'block';
     }
+    $("#cardsLeft").text("Click the card above to see the answer.  If the question was difficult, click the Review Again button below.  If you understood it easily, click the I Understand This button.");
+
 }
 
 // generate cards for review
@@ -140,6 +142,7 @@ $("#Landing :Button").on("click", function () {
         //testing function for now
         getModule();
     });
+
     changeState();
 });
 
@@ -199,7 +202,7 @@ $("#reviewContain").on("click", "#review, #understand", function (event) {
             }
         }
 
-
+        $("#cardsLeft").text(moduleJson.length + " cards left");
     }
     //if i understand clicked
     else if (id === "understand") {
@@ -251,6 +254,7 @@ $("#reviewContain").on("click", "#review, #understand", function (event) {
 
         }
 
+        $("#cardsLeft").text(moduleJson.length + " cards left");
 
     }
 
