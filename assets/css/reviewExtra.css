@@ -53,3 +53,12 @@ button {
     font-size: xx-large;
     
 }
+
+#cardContain {
+    overflow: auto;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}

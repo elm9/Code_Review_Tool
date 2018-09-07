@@ -1,9 +1,10 @@
 {
     "cards": [
+        
         {
             "id": "1",
-            "question": "What is API?",
-            "answer": "Application Programming Interface. Tools computers use to communicate with each other"
+            "question": "Open your console log.  Find the object's fifth index.  What is the name of the pokemon inside?",
+            "answer": "Charizard"
         },
         {
             "id": "2",
@@ -89,6 +90,11 @@
             "id": "18",
             "question": "callback",
             "answer": "instructions that I can do something with when I get a response back; call on instructions when I get a response back"
+        },
+        {
+            "id": "19",
+            "question": "What is API?",
+            "answer": "Application Programming Interface. Tools computers use to communicate with each other"
         }
     ]
 }
