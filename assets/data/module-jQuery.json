@@ -38,12 +38,12 @@
     {
       "id": "8",
       "question": "Where do you place jQuery code?",
-      "answer": "adding a line in between the opening (<head>) and closing (</head>) HTML header tags."
+      "answer": "adding a line in between the opening (< head >) and closing (< /head >) HTML header tags."
     },
     {
       "id": "9",
       "question": "Which jQuery function is used to prevent code from running, before the document is finished loading?",
-      "answer": "$(document).ready()"
+      "answer": "$(document) .ready()"
     },
     {
       "id": "10",
@@ -68,7 +68,7 @@
     {
       "id": "14",
       "question": "What type of jQuery selector can be used to identify elements that make use of a specific class?",
-      "answer": "document.ready()"
+      "answer": "document .ready()"
     },
     {
       "id": "15",

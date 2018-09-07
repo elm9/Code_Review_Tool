@@ -8,17 +8,17 @@
         {
             "id": "2",
             "question": "What is the correct HTML for referring to an external style sheet?",
-            "answer": "<link rel='stylesheet' type='text/css' href='mystyle.css'>"
+            "answer": "< link rel = 'stylesheet' type = 'text/css' href = 'mystyle.css' >"
         },
         {
             "id": "3",
             "question": "Where in an HTML document is the correct place to refer to an external style sheet?",
-            "answer": "In the <head> section"
+            "answer": "In the < head > section"
         },
         {
             "id": "4",
             "question": "Which HTML tag is used to define an internal style sheet?",
-            "answer": "<style>"
+            "answer": "< style >"
         },
         {
             "id": "5",
@@ -52,7 +52,7 @@
         },
         {
             "id": "11",
-            "question": "The correct CSS syntax for making all the <p> elements bold?",
+            "question": "The correct CSS syntax for making all the < p > elements bold?",
             "answer": "p {font-weight:bold;}"
         },
         {
