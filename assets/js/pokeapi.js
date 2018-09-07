@@ -12,7 +12,6 @@ $(document).ready(function() {
   
       var results = response.results;
       console.log(results);
-      console.log(response);
     });
   
   });

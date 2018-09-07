@@ -49,7 +49,16 @@ button {
 #flashCards, .question, .answer {
     height: 100%;
     text-align: center;
-    padding: 10%;
+    padding: 10px;
     font-size: xx-large;
     
+}
+
+#cardContain {
+    overflow: auto;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
 }

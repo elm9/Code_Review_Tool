@@ -24,51 +24,27 @@ var tinyReviewCards = [];
 var tinyUnderstandCards = [];
 
 
-
-var moduleApi = "./assets/data/module-api.json";
-
 // ----------------------------------------------------------------------------------------------------
 // (ii) initializing functions
 // ----------------------------------------------------------------------------------------------------
 
-//getJSON
-//put if statements here to get correct module (html, css, etc) to get correct json module file
-//for now only API
-
-// $.getJSON(moduleApi, function (json) { //change direct link to json file w variable. to change what it gets on category button click
-//   moduleJson = json.cards;
-//   console.log(moduleJson);
-//   //display initial question
-//   $('div.question').html("Question: " + moduleJson[count].question);
-//   //testing function for now
-//   getModule();
-// });
-
-
-// getModule function for now, for testing
-function getModule() {
-    for (var i = 0; i < moduleJson.length; i++) {
-        console.log(i, "-", moduleJson[i].id);
-        console.log(i, "-", moduleJson[i].question);
-        console.log(i, "-", moduleJson[i].answer);
-    }
-}
-
 //function to toggle between question/answer on click
 function cardToggle() {
-    //question div is hidden bc right now placeholder start text is in html .answer div, on click goes  shows .question div first
-    $('div.answer').hide();
-    //on click to toggle q & a divs
-    $('div.question, div.answer').on('click', function () {
-        //output html to card
-        $("div.question").html("Question: " + moduleJson[count].question);
-        $("div.answer").html("Answer: " + moduleJson[count].answer);
-        console.log(moduleJson[count].answer);
-        console.log(moduleJson[count].question);
-        //toggle between question and answer div
-        //$.toggle does the business
-        $('div.answer, div.question').toggle()
-    });
+  //question div is hidden bc right now placeholder start text is in html .answer div, on click goes  shows .question div first
+  $('div.answer').hide();
+  //on click to toggle q & a divs
+  $('#flashCards').on('click',
+    function() {
+
+      $('.answer, .question').slideToggle(200);
+
+
+      $("div.question").html("<b>Question</b><br><br><br>" + moduleJson[count].question);
+      $("div.answer").html("<b>Answer</b><br><br><br>" + moduleJson[count].answer);
+    }
+  );
+
+
 }
 
 // ----------------------------------------------------------------------------------------------------
@@ -130,19 +106,14 @@ $("#Landing :Button").on("click", function () {
     // alert(this.id + "was just clicked!")
 
     var module = this.id;
-    console.log(module);
     var getthatmodule = ("./assets/data/" + module + ".json");
-    console.log(getthatmodule);
 
     $.getJSON(getthatmodule, function (json) {
         moduleJson = json.cards;
-        console.log(moduleJson);
         //display initial question
-        $('div.question').html("Question: " + moduleJson[count].question);
+        $('div.question').html("<b>Question</b><br><br><br>" + moduleJson[count].question);
         //testing function for now
-        getModule();
     });
-
     changeState();
 });
 
@@ -158,21 +129,17 @@ $("#reviewContain").on("click", "#review, #understand", function (event) {
     $('div.answer').hide();
     $('div.question').show();
     var id = $(this).attr('id');
-    console.log("target id = " + id);
 
     //if review again is clicked
     if (id === "review") {
 
         reviewArr.push(moduleJson[count]);
-        console.log(reviewArr);
 
         //output to tinyCards
         tinyReviewCards = reviewArr.map(a => a.id);
 
-        console.log(tinyReviewCards);
 
         moduleJson.splice(count, 1); //TODO: FIX THIS!
-        console.log(moduleJson);
         count = count - 1; //OMFG
 
 
@@ -185,7 +152,7 @@ $("#reviewContain").on("click", "#review, #understand", function (event) {
                 reviewArr = [];
 
                 //display initial question
-                $('div.question').html("Question: " + moduleJson[count].question);
+                $('div.question').html("<b>Question</b><br><br><br>" + moduleJson[count].question);
 
                 //array for  i understand card data
                 understandArr = [];
@@ -208,16 +175,13 @@ $("#reviewContain").on("click", "#review, #understand", function (event) {
     else if (id === "understand") {
 
         understandArr.push(moduleJson[count]);
-        console.log(understandArr);
 
         //output to tinyCards
         tinyUnderstandCards = understandArr.map(a => a.id);
-        console.log(tinyUnderstandCards);
 
 
         //takes current array index out of the main moduleJson array
         moduleJson.splice(count, 1); //TODO: FIX THIS!
-        console.log(moduleJson);
         count = count - 1; //OMFG
 
 
@@ -228,24 +192,22 @@ $("#reviewContain").on("click", "#review, #understand", function (event) {
         }
 
         else if ((moduleJson.length === 0) && (reviewArr.length !== 0)) {
-            count = 0
-            var repeat = confirm("Do you want to review the questions you had difficulty with again?")
+            count = 0;
+            var repeat = confirm("Do you want to review the questions you had difficulty with again?");
             if (repeat) {
                 alert("okay we'll repeat");
                 moduleJson = reviewArr;
                 reviewArr = [];
 
                 //display initial question
-                $('div.question').html("Question: " + moduleJson[count].question);
-
-                //array for  i understand card data
-                understandArr = [];
-
+                $('div.question').html("<b>Question</b><br><br><br>" + moduleJson[count].question);
 
             }
             else {
                 alert("good job, going back to categories");
                 reviewArr = [];
+                //array for  i understand card data
+                understandArr = [];
 
                 //array for  i understand card data
                 understandArr = [];
@@ -267,8 +229,8 @@ $("#reviewContain").on("click", "#review, #understand", function (event) {
     if (moduleJson.length > count) {
 
         $("div.question, div.answer").empty();
-        $("div.question").html("Question: " + moduleJson[count].question);
-        $("div.answer").html("Answer: " + moduleJson[count].answer);
+        $("div.question").html("<b>Question</b><br><br><br>" + moduleJson[count].question);
+        $("div.answer").html("<b>Answer</b><br><br><br>" + moduleJson[count].answer);
 
         $("#tinyUnderstand").html(tinyUnderstandCards.map(function (genTinyUnderstand) {
             return ("<button class='tinyUnderstandGen' data-topic='" + genTinyUnderstand + "'>" + genTinyUnderstand + '</button>');
@@ -278,10 +240,9 @@ $("#reviewContain").on("click", "#review, #understand", function (event) {
             return ("<button class='tinyReviewGen' data-topic='" + genTinyReview + "'>" + genTinyReview + '</button>');
         }).join(" "));
 
-        console.log("count after: " + count);
     } else if (moduleJson.length <= count) {
         count = 0;
-        $("div.question").html("Question: " + moduleJson[count].question);
-        $("div.answer").html("Answer: " + moduleJson[count].answer);
+        $("div.question").html("<b>Question</b><br><br><br>" + moduleJson[count].question);
+        $("div.answer").html("<b>Answer</b><br><br><br>" + moduleJson[count].answer);
     }
 });

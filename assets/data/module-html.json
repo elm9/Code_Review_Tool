@@ -18,7 +18,7 @@
         {
             "id": "4",
             "question": "Sample boilerplate example",
-            "answer":"<html> <head> <title>My Website!</title> </head> <body> <h1> My Great Web Site</h1><ahref=”website.com”> Great website</a></body> </html>"
+            "answer":"< html > <br>  < head > <br> < title >  My Website!  < /title > <br> < /head ><br>  < body ><br> < h1 >  My Great Web Site  < /h1 ><br>  < a href = ”website.com” >  Great website < /a > <br>  < /body > <br> < /html >"
         },
         {
             "id": "5",
@@ -27,54 +27,54 @@
         },
         {
             "id": "6",
-            "question": "<DOCTYPE>",
-            "answer": "Describes the version of html being used.<! DOCTYPE html> specifies HTML5 which is the most current type."
+            "question": "< DOCTYPE >",
+            "answer": "Describes the version of html being used.< ! DOCTYPE html > specifies HTML5 which is the most current type."
         },
         {
             "id": "7",
-            "question": "<title>",
+            "question": "< title >",
             "answer": "Defines title that appears in the browser's title bar"
         },
         {
             "id": "8",
-            "question": "<body>",
+            "question": "< body >",
             "answer": "All content that appears on the web page shows up between these two tags."
         },
         {
             "id": "9",
-            "question": "<img>",
+            "question": "< img >",
             "answer": "an image tag"
         },
         {
             "id": "10",
-            "question": "<img> attribute that tells the computer which .jpg to pull",
-            "answer": "src='image.jpg'"
+            "question": "< img > attribute that tells the computer which .jpg to pull",
+            "answer": "src = 'image.jpg'"
         },
         {
             "id": "11",
             "question": "< img > attribute that gives a description of the image in case an image can't be viewed",
-            "answer": "alt='this is an image'"
+            "answer": "alt = 'this is an image'"
         },
         {
             "id": "12",
-            "question": "<img> attribute that specifies dimensions of an image",
-            "answer":"height=300 or width='200'"
+            "question": "< img > attribute that specifies dimensions of an image",
+            "answer":"height=300 or width ='200'"
 
         },
         {
             "id": "13",
-            "question": "What will <figure style='float:left;'> do?",
+            "question": "What will < figure style ='float:left;' > do?",
             "answer": "It will move the image so that it is to the left of any text"
         },
         {
             "id": "14",
-            "question": "<a>",
+            "question": "< a >",
             "answer": "hyperlink tag"
         },
         {
             "id": "15",
             "question": "What two tags don't need a closing tag?",
-            "answer": "<img> and <br>"
+            "answer": "< img > and < br >"
         },
         {
             "id": "16",
@@ -83,23 +83,24 @@
         },
         {
             "id": "17",
-            "question": "<a href='http://www.yahoo.com'>Go to Yahoo!</a>' Is this a correct hyperlink?",
+            "question": "< a href = 'http://www.yahoo.com' > Go to Yahoo! < /a > <br> Is this a correct hyperlink?",
             "answer": "Yes."
         },
         {
             "id": "18",
-            "question": " <a href='moreinfo.html'>For more info from Erika's website</a>  Is this a correct hyperlink?",
+            "question": " < a href = 'moreinfo.html' >  For more info from Erika's website  < /a > Is this a correct hyperlink?",
             "answer": "Yes."
         },
         {
             "id": "19",
             "question": "Attribute Basics",
-            "answer":"-all HTML tags can have attributes -provides additional info about an element -Attributes always come in name/value pairs like: name='value' -Attribute values are always enclosed in quotes -Equal sign = between attribute name and value -Always has a start tag and an end tag <p> </p>"
+            "answer":"-all HTML tags can have attributes <br> -provides additional info about an element <br> -Attributes always come in name/value pairs like: name='value' <br> -Attribute values are always enclosed in quotes <br> -Equal sign = between attribute name and value <br> -Always has a start tag and an end tag <p> </p>"
         },
         {
             "id": "20",
             "question": "What is the difference between html and CSS?",
-            "answer":"-HTML: standard markup language for creating Web pages -HTML stands for Hypertext Markup Language -Describes the STRUCTURE of Web pages using markup"
+            "answer":
+              "-HTML: standard markup language for creating Web pages <br> -HTML stands for Hypertext Markup Language <br> -Describes the STRUCTURE of Web pages using markup"
         },
         {
             "id": "21",
@@ -119,37 +120,23 @@
         {
             "id": "24",
             "question": "How many headings can you have?",
-            "answer":"6 headings <h1></h1>  The CEO <h2></h2>  VP <h3></h3>  Director <h4></h4>  Middle management <h5></h5>  Lowly assistant <h6></h6>  Gets coffee for everyone"
+            "answer":"6 headings <br> < h1 > < /h1 >  The CEO <br> < h2 > < /h2 >  VP <br> < h3 > < /h3 >  Director <br> < h4 >< /h4 >  Middle management <br> < h5 > < /h5 >  Lowly assistant <br> < h6 > < /h6 >  Gets coffee for everyone"
         },
         {
             "id": "25",
             "question": "What do the different headings tell you?",
-            "answer": "Specifies sizes, <h1> would be the largest because it would be the 'most important'"
+            "answer": "Specifies sizes, < h1 > would be the largest because it would be the 'most important'"
         },
         {
             "id": "26",
-            "question": "<strong></strong>",
+            "question": "< strong > < /strong >",
             "answer": "The tags make the text bold"
         },
         {
             "id": "27",
             "question": "Indentation",
             "answer": "The amount each line is spaced in from the margin"
-        },
-        {
-            "id": "27",
-            "question": "Nested",
-            "answer": ""
-        },
-        {
-            "id": "27",
-            "question": "",
-            "answer": ""
-        },
-        {
-            "id": "27",
-            "question": "",
-            "answer": " Simply means 'inside' the list"
         }
+
     ]
 }
